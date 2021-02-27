@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleVannaF_Chilelli", "VehicleVannaF_Chilelli\VehicleVannaF_Chilelli.csproj", "{E594D603-0584-485D-949E-B81E0E0D8F22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleVannaUI_Chilelli", "VehicleVannaUI_Chilelli\VehicleVannaUI_Chilelli.csproj", "{F4DC4B63-6FE0-4356-BF19-AC726927A799}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E594D603-0584-485D-949E-B81E0E0D8F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E594D603-0584-485D-949E-B81E0E0D8F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E594D603-0584-485D-949E-B81E0E0D8F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E594D603-0584-485D-949E-B81E0E0D8F22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4DC4B63-6FE0-4356-BF19-AC726927A799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4DC4B63-6FE0-4356-BF19-AC726927A799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4DC4B63-6FE0-4356-BF19-AC726927A799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4DC4B63-6FE0-4356-BF19-AC726927A799}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D53B10E0-AAC5-431C-97CD-063C099AF2E1}
+	EndGlobalSection
+EndGlobal
