@@ -22,8 +22,8 @@ namespace VehicleVannaF_Chilelli
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             var plzWork = JsonConvert.DeserializeObject<VehicleEnum>(requestBody);
             log.LogInformation("Log stuff here");
-            string responseMessage = $"Buyer {plzWork.buyerFirstName} {plzWork.buyerLastName} purchased a {plzWork.Year} {plzWork.Make}" +
-                $"{plzWork.Model + " "}  {plzWork.vehicleType} with list price of {plzWork.listPrice.ToString("C")}. With discount applied, " +
+            string responseMessage = $"Buyer {plzWork.buyerFirstName} {plzWork.buyerLastName} {plzWork.buyerEmail} purchased a {plzWork.Year} {plzWork.Make + " "}" +
+                $"{plzWork.Model} {plzWork.vehicleType} with list price of {plzWork.listPrice.ToString("C")}. With discount applied, " +
                 $"purchase price is {(plzWork.listPrice - (plzWork.listPrice * .085m)).ToString("C")}";
 
             return new OkObjectResult(responseMessage);
