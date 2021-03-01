@@ -205,7 +205,7 @@ namespace VehicleVannaUI_Chilelli
             this.vehicleTypes.FormattingEnabled = true;
             this.vehicleTypes.Items.AddRange(new object[] {
             "Car",
-            "SportsCar",
+            "Sports Car",
             "Truck",
             "Motorcycle",
             "MotorHome"});
