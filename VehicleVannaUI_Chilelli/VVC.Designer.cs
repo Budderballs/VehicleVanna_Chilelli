@@ -57,7 +57,7 @@ namespace VehicleVannaUI_Chilelli
             this.submitButton.Location = new System.Drawing.Point(186, 52);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(231, 261);
-            this.submitButton.TabIndex = 0;
+            this.submitButton.TabIndex = 9;
             this.submitButton.Text = "Submit";
             this.submitButton.UseVisualStyleBackColor = false;
             this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
@@ -77,14 +77,14 @@ namespace VehicleVannaUI_Chilelli
             this.buyerFirstNameText.Location = new System.Drawing.Point(12, 26);
             this.buyerFirstNameText.Name = "buyerFirstNameText";
             this.buyerFirstNameText.Size = new System.Drawing.Size(166, 20);
-            this.buyerFirstNameText.TabIndex = 3;
+            this.buyerFirstNameText.TabIndex = 1;
             // 
             // buyerLastNameText
             // 
             this.buyerLastNameText.Location = new System.Drawing.Point(186, 26);
             this.buyerLastNameText.Name = "buyerLastNameText";
             this.buyerLastNameText.Size = new System.Drawing.Size(231, 20);
-            this.buyerLastNameText.TabIndex = 5;
+            this.buyerLastNameText.TabIndex = 2;
             // 
             // buyerLastNameLabel
             // 
@@ -101,7 +101,7 @@ namespace VehicleVannaUI_Chilelli
             this.buyerEmailText.Location = new System.Drawing.Point(12, 70);
             this.buyerEmailText.Name = "buyerEmailText";
             this.buyerEmailText.Size = new System.Drawing.Size(166, 20);
-            this.buyerEmailText.TabIndex = 7;
+            this.buyerEmailText.TabIndex = 3;
             // 
             // buyerEmailLabel
             // 
@@ -118,7 +118,7 @@ namespace VehicleVannaUI_Chilelli
             this.makeText.Location = new System.Drawing.Point(12, 161);
             this.makeText.Name = "makeText";
             this.makeText.Size = new System.Drawing.Size(166, 20);
-            this.makeText.TabIndex = 9;
+            this.makeText.TabIndex = 5;
             // 
             // vehicleTypeLabel
             // 
@@ -155,14 +155,14 @@ namespace VehicleVannaUI_Chilelli
             this.modelText.Location = new System.Drawing.Point(12, 205);
             this.modelText.Name = "modelText";
             this.modelText.Size = new System.Drawing.Size(166, 20);
-            this.modelText.TabIndex = 11;
+            this.modelText.TabIndex = 6;
             // 
             // yearText
             // 
             this.yearText.Location = new System.Drawing.Point(12, 249);
             this.yearText.Name = "yearText";
             this.yearText.Size = new System.Drawing.Size(166, 20);
-            this.yearText.TabIndex = 13;
+            this.yearText.TabIndex = 7;
             // 
             // yearLabel
             // 
@@ -186,6 +186,7 @@ namespace VehicleVannaUI_Chilelli
             // 
             // listPriceText
             // 
+            this.listPriceText.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listPriceText.Location = new System.Drawing.Point(12, 294);
             this.listPriceText.Maximum = new decimal(new int[] {
             1000000,
@@ -193,8 +194,10 @@ namespace VehicleVannaUI_Chilelli
             0,
             0});
             this.listPriceText.Name = "listPriceText";
-            this.listPriceText.Size = new System.Drawing.Size(166, 20);
-            this.listPriceText.TabIndex = 17;
+            this.listPriceText.Size = new System.Drawing.Size(166, 23);
+            this.listPriceText.TabIndex = 8;
+            this.listPriceText.ThousandsSeparator = true;
+            this.listPriceText.Enter += new System.EventHandler(this.listPriceText_Enter);
             // 
             // vehicleTypes
             // 
@@ -212,7 +215,7 @@ namespace VehicleVannaUI_Chilelli
             this.vehicleTypes.Location = new System.Drawing.Point(12, 114);
             this.vehicleTypes.Name = "vehicleTypes";
             this.vehicleTypes.Size = new System.Drawing.Size(166, 23);
-            this.vehicleTypes.TabIndex = 1;
+            this.vehicleTypes.TabIndex = 4;
             // 
             // VVC
             // 

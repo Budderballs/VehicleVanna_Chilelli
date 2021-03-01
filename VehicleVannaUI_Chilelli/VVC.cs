@@ -24,5 +24,10 @@ namespace VehicleVannaUI_Chilelli
             MessageBox.Show(response.Content.ReadAsStringAsync().Result.ToString());
             this.Show();
         }
+
+        private void listPriceText_Enter(object sender, EventArgs e)
+        {
+            listPriceText.ResetText();
+        }
     }
 }
