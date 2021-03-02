@@ -21,6 +21,7 @@ namespace VehicleVannaF_Chilelli
             log.LogInformation("C# HTTP trigger function processed a request.");
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             var plzWork = JsonConvert.DeserializeObject<VehicleEnum>(requestBody);
+            await vehicleAsync.AddAsync(plzWork);
             log.LogInformation("Log stuff here");
             string responseMessage = string.IsNullOrEmpty(plzWork.buyerFirstName) || string.IsNullOrEmpty(plzWork.buyerLastName) || string.IsNullOrEmpty(plzWork.buyerEmail)
                 || string.IsNullOrEmpty(plzWork.Make) || string.IsNullOrEmpty(plzWork.Model) || string.IsNullOrEmpty(plzWork.Year)
